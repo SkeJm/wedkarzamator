@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio początkującego wędkarza – Moje wyprawy, doświadczenia i pasja." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Moje wędkarskie przygody</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">🎣 Wędkarz Amator</div>
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="#" data-section="o-mnie">O mnie</a></li>
+        <li><a href="#" data-section="wyprawy">Wyprawy</a></li>
+        <li><a href="#" data-section="sprzet">Sprzęt</a></li>
+        <li><a href="#" data-section="kontakt">Kontakt</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Otwórz menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="o-mnie" class="section active">
+      <h1>Cześć! Mam na imię Kamil i jestem początkującym wędkarzem.</h1>
+      <p>Choć jestem dopiero na początku drogi, wędkarstwo od razu mnie wciągnęło i stało się ważną częścią mojego życia. To coś więcej niż tylko łowienie ryb – to sposób na spędzenie czasu w ciszy, z dala od zgiełku, w bliskości z naturą.
+
+Pierwsze wyprawy nie były łatwe – splątane żyłki, zerwane zestawy, brak brań. Ale z każdą kolejną wizytą nad wodą uczę się czegoś nowego. Eksperymentuję, rozmawiam z bardziej doświadczonymi wędkarzami i z satysfakcją patrzę, jak z czasem pojawiają się pierwsze sukcesy.
+
+Na tej stronie chcę dzielić się moimi doświadczeniami – zarówno sukcesami, jak i porażkami. Może kogoś zainspiruję do rozpoczęcia własnej wędkarskiej przygody. Zapraszam do śledzenia moich wypraw i galerii zdjęć. Każda ryba to dla mnie nowa historia, a każdy wypad nad wodę to coś, na co czekam z niecierpliwością.</p>
+      <img src="img/jezioro.jpg" alt="Spokojne jezioro o poranku"/>
+      <img src="img/lowienie.jpg" alt="Spokojne łowienie"/>
+    </section>
+
+    <section id="wyprawy" class="section">
+      <h2>Moje wyprawy</h2>
+
+      <p>Najczęściej łowię w okolicach jezior i rzek w moim regionie. Moja pierwsza zdobycz to płotka złowiona na spławik.</p>
+      <img src="img/ryba1.jpg" alt="Pierwsza ryba złowiona"/>
+
+      <p>W maju 2025 udało mi się złowić karpia o długości ok. 40 cm – to mój rekord!</p>
+      <img src="img/karp.jpg" alt="Zdobycz – karpik"/>
+
+      <p>Najczęściej jeżdzę na ryby z moimi kumplami. Dobrze mieć swoich kompanów do łowienia, zawsze można liczyć na wzajemną pomoc i ciekawą rozmowę.</p>
+      <img src="img/kumple.jpg" alt="Zdjęcie z łowiska"/>
+
+      <p>Oczywiście, jeśli pozwalają na to zasady łowiska próbujemy różnych ryb. Tutaj przykładowo (s)pieczony karp, wyjątkowo nie smakował szlamem.</p>
+      <img src="img/jedzonko.jpg" alt="Pieczona rybka"/>
+
+      <p></p>
+    </section>
+
+    <section id="sprzet" class="section">
+      <h2>Używany sprzęt</h2>
+      <ul>
+        <li>Wędka: Mikado Princess 270</li>
+        <li>Kołowrotek: Shimano FX 2500</li>
+        <li>Przynęty: robaki białe i czerwone, kukurydza</li>
+        <li>Zanęty: karpiowe truskawkowe, waniliowe itp.</li>
+        <li>Techniki: głównie spławik i klasyczny feeder</li>
+      </ul>
+      <img src="img/sprzet.jpg" alt="Mój zestaw wędkarski" class="sprzet"/>
+    </section>
+
+    <section id="kontakt" class="section">
+      <h2>Kontakt</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Wyślij</button>
+        <div id="form-msg"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wędkarz Amator – Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
